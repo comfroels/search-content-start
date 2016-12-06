@@ -1,0 +1,5 @@
+<label for="rimSearch">Rim Search!</label>
+<input required (input)="term$.next($event.target.value)" name="rimSearch" />
+<div *ngIf="result">
+    {{result | json}}
+</div>
