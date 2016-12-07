@@ -15,12 +15,11 @@ import * as import6 from '@angular/core/src/linker/view_type';
 import * as import7 from '@angular/core/src/change_detection/change_detection';
 import * as import8 from '@angular/core/src/linker/component_factory';
 import * as import9 from './rim-search.service';
-import * as import10 from './rim-search.style.css.shim';
-import * as import11 from '@angular/core/src/linker/template_ref';
-import * as import12 from '@angular/common/src/directives/ng_if';
-import * as import13 from '@angular/core/src/linker/view_container';
-import * as import14 from '../../../node_modules/@angular/common/src/directives/ng_if.ngfactory';
-import * as import15 from '@angular/common/src/pipes/json_pipe';
+import * as import10 from '@angular/core/src/linker/template_ref';
+import * as import11 from '@angular/common/src/directives/ng_if';
+import * as import12 from '@angular/core/src/linker/view_container';
+import * as import13 from '../../../node_modules/@angular/common/src/directives/ng_if.ngfactory';
+import * as import14 from '@angular/common/src/pipes/json_pipe';
 export class Wrapper_RimSearchComponent {
   /*private*/ _eventHandler:Function;
   context:import0.RimSearchComponent;
@@ -82,82 +81,90 @@ class View_RimSearchComponent_Host0 extends import1.DebugAppView<any> {
   }
 }
 export const RimSearchComponentNgFactory:import8.ComponentFactory<import0.RimSearchComponent> = new import8.ComponentFactory<import0.RimSearchComponent>('rim-search',View_RimSearchComponent_Host0,import0.RimSearchComponent);
-const styles_RimSearchComponent:any[] = [import10.styles];
+const styles_RimSearchComponent:any[] = ([] as any[]);
 const nodeDebugInfos_RimSearchComponent0:import2.StaticNodeDebugInfo[] = [
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
-  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{rimSearchRef: (null as any)}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import2.StaticNodeDebugInfo([
-    import11.TemplateRef,
-    import12.NgIf
+    import10.TemplateRef,
+    import11.NgIf
   ]
-  ,(null as any),{})
+  ,(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_RimSearchComponent:import3.RenderComponentType = import4.createRenderComponentType('C:/Users/nathan.white/Documents/Codez/angular2-aot-webpack/src/app/components/rim-search.template.html',0,import5.ViewEncapsulation.Emulated,styles_RimSearchComponent,{});
+var renderType_RimSearchComponent:import3.RenderComponentType = import4.createRenderComponentType('C:/Users/nathan.white/Documents/Codez/angular2-aot-webpack/src/app/components/rim-search.component.ts class RimSearchComponent - inline template',0,import5.ViewEncapsulation.None,styles_RimSearchComponent,{});
 export class View_RimSearchComponent0 extends import1.DebugAppView<import0.RimSearchComponent> {
-  _el_0:any;
-  _text_1:any;
+  _text_0:any;
+  _el_1:any;
   _text_2:any;
-  _el_3:any;
-  _text_4:any;
-  _anchor_5:any;
-  /*private*/ _vc_5:import13.ViewContainer;
-  _TemplateRef_5_5:any;
-  _NgIf_5_6:import14.Wrapper_NgIf;
+  _text_3:any;
+  _el_4:any;
+  _text_5:any;
+  _anchor_6:any;
+  /*private*/ _vc_6:import12.ViewContainer;
+  _TemplateRef_6_5:any;
+  _NgIf_6_6:import13.Wrapper_NgIf;
+  _text_7:any;
   constructor(viewUtils:import4.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any) {
     super(View_RimSearchComponent0,renderType_RimSearchComponent,import6.ViewType.COMPONENT,viewUtils,parentView,parentIndex,parentElement,import7.ChangeDetectorStatus.CheckAlways,nodeDebugInfos_RimSearchComponent0);
   }
   createInternal(rootSelector:string):import8.ComponentRef<any> {
     const parentRenderNode:any = this.renderer.createViewRoot(this.parentElement);
-    this._el_0 = import4.createRenderElement(this.renderer,parentRenderNode,'label',new import4.InlineArray2(2,'for','rimSearch'),this.debug(0,0,0));
-    this._text_1 = this.renderer.createText(this._el_0,'Rim Search!',this.debug(1,0,23));
-    this._text_2 = this.renderer.createText(parentRenderNode,'\n',this.debug(2,0,42));
-    this._el_3 = import4.createRenderElement(this.renderer,parentRenderNode,'input',new import4.InlineArray4(4,'name','rimSearch','required',''),this.debug(3,1,0));
-    this._text_4 = this.renderer.createText(parentRenderNode,'\n',this.debug(4,1,87));
-    this._anchor_5 = this.renderer.createTemplateAnchor(parentRenderNode,this.debug(5,2,0));
-    this._vc_5 = new import13.ViewContainer(5,(null as any),this,this._anchor_5);
-    this._TemplateRef_5_5 = new import11.TemplateRef_(this,5,this._anchor_5);
-    this._NgIf_5_6 = new import14.Wrapper_NgIf(this._vc_5.vcRef,this._TemplateRef_5_5);
-    var disposable_0:Function = import4.subscribeToRenderElement(this,this._el_3,new import4.InlineArray2(2,'keyup',(null as any)),this.eventHandler(this.handleEvent_3));
+    this._text_0 = this.renderer.createText(parentRenderNode,'\n    ',this.debug(0,0,0));
+    this._el_1 = import4.createRenderElement(this.renderer,parentRenderNode,'label',new import4.InlineArray2(2,'for','rimSearch'),this.debug(1,1,4));
+    this._text_2 = this.renderer.createText(this._el_1,'Rim Search!',this.debug(2,1,27));
+    this._text_3 = this.renderer.createText(parentRenderNode,'\n    ',this.debug(3,1,46));
+    this._el_4 = import4.createRenderElement(this.renderer,parentRenderNode,'input',new import4.InlineArray4(4,'name','rimSearch','required',''),this.debug(4,2,4));
+    this._text_5 = this.renderer.createText(parentRenderNode,'\n    ',this.debug(5,2,81));
+    this._anchor_6 = this.renderer.createTemplateAnchor(parentRenderNode,this.debug(6,3,4));
+    this._vc_6 = new import12.ViewContainer(6,(null as any),this,this._anchor_6);
+    this._TemplateRef_6_5 = new import10.TemplateRef_(this,6,this._anchor_6);
+    this._NgIf_6_6 = new import13.Wrapper_NgIf(this._vc_6.vcRef,this._TemplateRef_6_5);
+    this._text_7 = this.renderer.createText(parentRenderNode,'\n  ',this.debug(7,5,10));
+    var disposable_0:Function = import4.subscribeToRenderElement(this,this._el_4,new import4.InlineArray2(2,'input',(null as any)),this.eventHandler(this.handleEvent_4));
     this.init((null as any),((<any>this.renderer).directRenderer? (null as any): [
-      this._el_0,
-      this._text_1,
+      this._text_0,
+      this._el_1,
       this._text_2,
-      this._el_3,
-      this._text_4,
-      this._anchor_5
+      this._text_3,
+      this._el_4,
+      this._text_5,
+      this._anchor_6,
+      this._text_7
     ]
     ),[disposable_0]);
     return (null as any);
   }
   injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
-    if (((token === import11.TemplateRef) && (5 === requestNodeIndex))) { return this._TemplateRef_5_5; }
-    if (((token === import12.NgIf) && (5 === requestNodeIndex))) { return this._NgIf_5_6.context; }
+    if (((token === import10.TemplateRef) && (6 === requestNodeIndex))) { return this._TemplateRef_6_5; }
+    if (((token === import11.NgIf) && (6 === requestNodeIndex))) { return this._NgIf_6_6.context; }
     return notFoundResult;
   }
   detectChangesInternal(throwOnChange:boolean):void {
-    this.debug(5,2,5);
-    const currVal_5_0_0:any = this.context.result;
-    this._NgIf_5_6.check_ngIf(currVal_5_0_0,throwOnChange,false);
-    this._NgIf_5_6.ngDoCheck(this,this._anchor_5,throwOnChange);
-    this._vc_5.detectChangesInNestedViews(throwOnChange);
+    this.debug(6,3,9);
+    const currVal_6_0_0:any = this.context.result;
+    this._NgIf_6_6.check_ngIf(currVal_6_0_0,throwOnChange,false);
+    this._NgIf_6_6.ngDoCheck(this,this._anchor_6,throwOnChange);
+    this._vc_6.detectChangesInNestedViews(throwOnChange);
   }
   destroyInternal():void {
-    this._vc_5.destroyNestedViews();
+    this._vc_6.destroyNestedViews();
   }
   createEmbeddedViewInternal(nodeIndex:number):import1.AppView<any> {
-    if ((nodeIndex == 5)) { return new View_RimSearchComponent1(this.viewUtils,this,5,this._anchor_5,this._vc_5); }
+    if ((nodeIndex == 6)) { return new View_RimSearchComponent1(this.viewUtils,this,6,this._anchor_6,this._vc_6); }
     return (null as any);
   }
-  handleEvent_3(eventName:string,$event:any):boolean {
-    this.debug(3,1,0);
+  handleEvent_4(eventName:string,$event:any):boolean {
+    this.debug(4,2,4);
     this.markPathToRootAsCheckOnce();
     var result:boolean = true;
-    if ((eventName == 'keyup')) {
-      const pd_sub_0:any = ((<any>this.context.search($event.target.value)) !== false);
+    if ((eventName == 'input')) {
+      const pd_sub_0:any = ((<any>this.context.term$.next($event.target.value)) !== false);
       result = (pd_sub_0 && result);
     }
     return result;
@@ -172,16 +179,16 @@ class View_RimSearchComponent1 extends import1.DebugAppView<any> {
   _el_0:any;
   _text_1:any;
   /*private*/ _expr_2:any;
-  _pipe_json_0:import15.JsonPipe;
-  constructor(viewUtils:import4.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import13.ViewContainer) {
+  _pipe_json_0:import14.JsonPipe;
+  constructor(viewUtils:import4.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import12.ViewContainer) {
     super(View_RimSearchComponent1,renderType_RimSearchComponent,import6.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import7.ChangeDetectorStatus.CheckAlways,nodeDebugInfos_RimSearchComponent1,declaredViewContainer);
     this._expr_2 = import7.UNINITIALIZED;
   }
   createInternal(rootSelector:string):import8.ComponentRef<any> {
-    this._el_0 = import4.createRenderElement(this.renderer,(null as any),'div',import4.EMPTY_INLINE_ARRAY,this.debug(0,2,0));
-    this._text_1 = this.renderer.createText(this._el_0,'',this.debug(1,2,20));
+    this._el_0 = import4.createRenderElement(this.renderer,(null as any),'div',import4.EMPTY_INLINE_ARRAY,this.debug(0,3,4));
+    this._text_1 = this.renderer.createText(this._el_0,'',this.debug(1,3,24));
     this.debug((null as any),(null as any),(null as any));
-    this._pipe_json_0 = new import15.JsonPipe();
+    this._pipe_json_0 = new import14.JsonPipe();
     this.init(this._el_0,((<any>this.renderer).directRenderer? (null as any): [
       this._el_0,
       this._text_1
@@ -191,9 +198,9 @@ class View_RimSearchComponent1 extends import1.DebugAppView<any> {
   }
   detectChangesInternal(throwOnChange:boolean):void {
     const valUnwrapper:any = new import7.ValueUnwrapper();
-    this.debug(1,2,20);
+    this.debug(1,3,24);
     valUnwrapper.reset();
-    const currVal_2:any = import4.inlineInterpolate(1,'\n    ',valUnwrapper.unwrap(this._pipe_json_0.transform(this.parentView.context.result)),'\n');
+    const currVal_2:any = import4.inlineInterpolate(1,'\n        ',valUnwrapper.unwrap(this._pipe_json_0.transform(this.parentView.context.result)),'\n    ');
     if ((valUnwrapper.hasWrappedValue || import4.checkBinding(throwOnChange,this._expr_2,currVal_2))) {
       this.renderer.setText(this._text_1,currVal_2);
       this._expr_2 = currVal_2;
