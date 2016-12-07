@@ -4,7 +4,10 @@ export var RimSearchService = (function () {
     function RimSearchService() {
     }
     RimSearchService.prototype.search = function (term) {
-        return Observable.create({ term: term });
+        return Observable.create(function (observer) {
+            observer.next({ term: term });
+            observer.complete();
+        });
     };
     RimSearchService.decorators = [
         { type: Injectable },

@@ -6,10 +6,15 @@ import 'rxjs/add/operator/debounceTime';
 import { RimSearchService } from './rim-search.service';
 
 @Component({
-  moduleId: module.id,
   selector: 'rim-search',
-  templateUrl: 'rim-search.template.html',
-  styleUrls: ['rim-search.style.css']
+  template: `
+    <label for="rimSearch">Rim Search!</label>
+    <input required (input)="term$.next($event.target.value)" name="rimSearch" />
+    <div *ngIf="result">
+        {{result | json}}
+    </div>
+  `,
+  
 })
 export class RimSearchComponent {
 
