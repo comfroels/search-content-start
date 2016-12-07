@@ -11,39 +11,47 @@ class TestService {
   }
 }
 
-beforeEach(() => {
-  TestBed.configureTestingModule({
-    declarations: [
-      TestComponent
-    ],
-    imports: [
-      MainModule
-      // HttpModule, etc.
-    ],
-    providers: [
-      { provide: RimSearchService, useClass: TestService }
-    ]
-  });
-});
+describe(
+  'RimSearchComponent',
+  () => {
+    beforeEach(() => {
+      TestBed.configureTestingModule({
+        declarations: [
+          TestComponent,
+          RimSearchComponent
+        ],
+        imports: [
+          MainModule
+          // HttpModule, etc.
+        ],
+        providers: [
+          { provide: RimSearchService, useClass: TestService }
+        ]
+      });
+    });
 
-it('should do something', async(() => {
-  // Overrides here, if you need them
-//   TestBed.overrideComponent(SomeComponent, {
-//     set: {
-//       template: '<div>Overridden template here</div>'
-//       // ...
-//     }
-//   });
+    it('should do something', async(() => {
+      // Overrides here, if you need them
+    //   TestBed.overrideComponent(SomeComponent, {
+    //     set: {
+    //       template: '<div>Overridden template here</div>'
+    //       // ...
+    //     }
+    //   });
 
-  TestBed.compileComponents().then(() => {
-    const fixture = TestBed.createComponent(TestComponent);
+      TestBed.compileComponents().then(() => {
+        const fixture = TestBed.createComponent(TestComponent);
 
-    // Access the dependency injected component instance
-    const app = fixture.componentInstance;
+        // Access the dependency injected component instance
+        const app = fixture.componentInstance;
 
-    expect(app).toBeTruthy();
-  });
-}));
+        expect(app).toBeTruthy();
+      });
+    }));
+  }
+)
+
+
 
 @Component({
   selector: 'test-cmp',
